@@ -9,15 +9,15 @@
 </head>
 <body>
     <h1>Teste e Formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="iusu">Usuário</label>
-            <input type="text" name="usu" id="iusu">
+            <label for="iusu">Usuário </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" size="15" placeholder="   Nome de Usuario" autocomplete="username">
 
         </p>
         <p>
-            <label for="isen">Senha:</label>
-            <input type="password" name="isenha" id="isenha">
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required maxlength="8" size="16" placeholder="            Senha" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
