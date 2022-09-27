@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="arquivoc.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="ifazenda">Fazenda:</label>
+            <input type="text" name="fazenda" id="ifazenda" required placeholder="Nome da Fazenda" list="ilistaf">
+            <datalist id="ilistaf">
+                <option value="Fazenda dois córregos">Usina Bazan</option>
+            
+            </datalist>
+
+
+            <label for="icod">Código</label>
+            <input type="number" name="codigo" id="icod" required placeholder="código Fazenda"  min="1" max="2000 " list="ilistcodigo">
+            <datalist id="ilistcodigo">  
+
+                <optgroup label="Setor 100 Pontal">
+                    <option value="1">BOM SECESSO BAZAN</option>
+                    <option value="2">SITIO NOSSA SENHORA APARECIDA ANDRUCIOLI</option>
+                    <option value="24">FAZENDA DOIS CORREGOS</option>
+                </optgroup>
+
+            </datalist>
+
+
+            <label for="isetor">Setor</label>
+            <input type="number" name="setor" id="isetor" required placeholder="Setor " min="1" max="125" list="ilistsetor">
+            <datalist id="ilistsetor">  
+            
+            <optgroup label="100 Pontal">100 Pontal</optgroup>
+            <option value="100">Pontal</option>
+            <option value="101">Cândia</option>
+            <option value="102">Sales de Oliveira</option>
+            <option value="103">Cruz das Posses</option>
+            <option value="104">Jaboticabal</option>
+            <option value="105">Orlandia</option>
+            <option value="106"></option>
+
+
+            </datalist>
+
+        </p>
+
+        <fieldset>
+            <legend>
+                Lançamento diario de Produtos 
+            </legend>
+                <p><label for="iproda">Produto: </label><input type="number" name="produto a" id="iproda"  placeholder="Nome Do Produto"></p>
+
+                <p><label for="iprodb">Produto: </label><input type="number" name="produto a" id="iprodb"></p>
+
+                <p><label for="iprodc">Produto: </label><input type="number" name="produto a" id="iprodc"></p>
+
+                <p><label for="iprodd">Produto: </label><input type="number" name="produto a" id="iprodd"></p>
+
+                <p><label for="iprode">Produto: </label><input type="number" name="produto a" id="iprode"></p>
+
+
+
+
+
+        </fieldset>
+        
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
